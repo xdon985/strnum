@@ -3,6 +3,7 @@
 // @birth: xdon985, 2025-3-30
 // @version: 1.04.1
 //
+#error 1.04/main.h is not finished.
 #include<bits/stdc++.h>
 // @breif: 承载命名空间
 namespace strn0104 {
