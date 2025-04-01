@@ -3,11 +3,9 @@
 // @birth: xdon985, 2025-3-30
 // @version: 1.04.1
 //
-// TODO(xdon985): testing and debugging
 #include<bits/stdc++.h>
 // @breif: 承载命名空间
 namespace strn0104 {
-	// @breif: NL 表示长度, D 表示进制
 	constexpr long long NL = 100, D = 10;
 	struct N; using I = long long;
 	using A = N const&; using V = void; using B = bool;
@@ -95,7 +93,7 @@ namespace strn0104 {
 	V corra(N& s) {
 		I tmp;
 		for (I d = 0; d < NL; ++d) {
-			if (s[d] > D) {
+			if (s[d] >= D) {
 				tmp = s[d] / D;
 				if(d + 1 < NL) s[d + 1] += tmp;
 				s[d] -= tmp * D;
@@ -111,7 +109,7 @@ namespace strn0104 {
 	V corrl(N& s) {
 		I tmp;
 		for (I d = 0; d < NL; ++d) {
-			if (s[d] > D) {
+			if (s[d] >= D) {
 				tmp = s[d] / D;
 				if(d + 1 < NL) s[d + 1] += tmp;
 				s[d] -= tmp * D;
