@@ -61,9 +61,9 @@ namespace strn0104 {
 		corra(s);
 	}
 	V operator*= (N& s, A n1) { s = s * n1; }
-	N operator+  (A n1, I i1) { N ret = n1; return ret += i1, ret; }
-	N operator-  (A n1, I i1) { N ret = n1; return ret -= i1, ret; }
-	N operator*  (A n1, I i1) { N ret = n1; return ret *= i1, ret; }
+	N operator+  (A n1, I i1) { N ret = n1; ret += i1; return ret; }
+	N operator-  (A n1, I i1) { N ret = n1; ret -= i1; return ret; }
+	N operator*  (A n1, I i1) { N ret = n1; ret *= i1; return ret; }
 	V operator+= (N& s, I i1) { s[0] += i1; corrl(s); }
 	V operator-= (N& s, I i1) { s[0] -= i1; corrl(s); }
 	V operator*= (N& s, I i1) {
@@ -129,4 +129,4 @@ namespace strn0104 {
 		std::string s; f >> s; n1 = s; return f;
 	}
 }
-typedef strn0104::N bigint;
+typedef strn0104::N Strnum;
