@@ -5,7 +5,7 @@
 #define A N const&
 #define O operator
 
-namespace Long {
+namespace strn0105 {
 	using I = long long; using V = void; using B = bool;
 	constexpr I D = 10; // 阐述 
 	TL struct Long {
@@ -105,3 +105,8 @@ namespace Long {
 	TL std::istream& O >> (std::istream& f, N& n1)
 	{ std::string s; f >> s; n1 = s; return f; }
 }
+template<long long Ln> using StrNumM = strn0105::Long<Ln>;
+#undef TL
+#undef N
+#undef A
+#undef O
