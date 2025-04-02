@@ -1,11 +1,13 @@
+#pragma once
 //
-// @brief: 高精度整数(OI可用)
+// @brief: 高精度整数
 // @birth: xdon985, 2025-3-30
 // @version: 1.04.1
 //
 #include<bits/stdc++.h>
 // @breif: 承载命名空间
-namespace strn0104 {
+namespace bign0104 {
+	// NL for integer length
 	constexpr long long NL = 100, D = 10;
 	struct N; using I = long long;
 	using A = N const&; using V = void; using B = bool;
@@ -129,4 +131,4 @@ namespace strn0104 {
 		std::string s; f >> s; n1 = s; return f;
 	}
 }
-typedef strn0104::N Strnum;
+typedef strn0104::N BigInteger0104;
