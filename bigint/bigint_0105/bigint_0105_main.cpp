@@ -1,20 +1,21 @@
+#pragma once
 #include<bits/stdc++.h>
 
 #define TL template<I Ln>
-#define N Long<Ln>
+#define N BigInt<Ln>
 #define A N const&
 #define O operator
 
-namespace strn0105 {
+namespace bign0105 {
 	using I = long long; using V = void; using B = bool;
 	constexpr I D = 10; // 阐述 
-	TL struct Long {
+	TL struct BigInt {
 		I s[Ln] {};
 
-		Long () = default;
-		Long (I x) { *this += x; }
-		Long (std::string const& str): Long(str.c_str()) { }
-		Long (char const* const str);
+		BigInt () = default;
+		BigInt (I x) { *this += x; }
+		BigInt (std::string const& str): BigInt(str.c_str()) { }
+		BigInt (char const* const str);
 
 		I& O[](I d)       { return s[d]; }
 		I  O[](I d) const { return s[d]; }
@@ -105,7 +106,7 @@ namespace strn0105 {
 	TL std::istream& O >> (std::istream& f, N& n1)
 	{ std::string s; f >> s; n1 = s; return f; }
 }
-template<long long Ln> using StrNumM = strn0105::Long<Ln>;
+template<long long Ln> using BigInt0105 = bign0105::BigInt<Ln>;
 #undef TL
 #undef N
 #undef A
